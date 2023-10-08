@@ -1,6 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### Demo - Deployed over Github Pages 
+https://weather-app-with-cities-autocomplete.vercel.app/
 
 ## Getting Started
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
@@ -24,6 +27,34 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+### APIs Used
+#1.
+[Open Weather APIs](https://openweathermap.org/)
+
+https://openweathermap.org/current
+
+#2.
+[Rapid APIs](https://rapidapi.com/wirefreethought/api/geodb-cities/)
+
+https://rapidapi.com/wirefreethought/api/geodb-cities/
+
+
+
+### API Info
+#1.
+* Method: `GET`
+* URL: `https://api.openweathermap.org/data/2.5/weather?q={CITY_NAME}&appid={API_KEY}`
+
+#2.
+* Header: `{ "X-RapidAPI-Key": RAPIDAPI_API_KEY,"X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com" }`
+* Method: `GET`
+* URL: `https://wft-geo-db.p.rapidapi.com/v1/geo?minPopulation=1000000&namePrefix={NAME_PREFIX}`
+
+### Libraries used
+* `react-accessible-accordion`
+* `react-select-async-paginate`
+* `tailwind`
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -38,3 +69,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### How can I appreciate this repo? ###
+
+* By giving this repo a 🌟
+* By Following : [ritik-1721](https://github.com/ritik-1721) at GitHub
